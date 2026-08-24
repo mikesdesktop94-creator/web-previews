@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>fundii — Personal Loans from $1,000 to $100,000 | Apply or Call</title>
+<meta name="description" content="Fixed-rate personal loans from $1,000 to $100,000. Fill out the short form or call a specialist to find out what you qualify for. No fees to apply.">
+<meta name="theme-color" content="#FAF8F5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   fundii.us — personal loan landing page
+   Palette: warm cream, near-black, deep crimson gradient, gold
+   ============================================================ */
+:root{
+  --cream:#FAF8F5;
+  --cream-2:#F3EFE9;
+  --white:#FFFFFF;
+  --ink:#121212;
+  --ink-2:#1C1A19;
+  --body:#4A4A4A;
+  --muted:#666666;
+  --faint:#8C8781;
+  --line:#E5E1DB;
+  --line-2:#D4CFC6;
+
+  --crimson:#8A0000;
+  --crimson-d:#6B0000;
+  --red:#EF4343;
+  --grad:linear-gradient(135deg,#8A0000 0%,#EF4343 100%);
+  --grad-r:linear-gradient(135deg,#EF4343 0%,#8A0000 100%);
+  --crimson-dim:rgba(138,0,0,.08);
+  --crimson-line:rgba(138,0,0,.20);
+
+  --gold:#D5B176;
+  --gold-d:#B8944F;
+  --gold-dim:rgba(213,177,118,.18);
+  --yellow:#FACC15;
+  --green:#2E7D4F;
+
+  --radius:10px;
+  --radius-lg:16px;
+  --radius-xl:22px;
+  --shadow-s:0 1px 3px rgba(18,18,18,.06),0 1px 2px rgba(18,18,18,.04);
+  --shadow:0 12px 34px -14px rgba(18,18,18,.20),0 3px 10px rgba(18,18,18,.05);
+  --shadow-lg:0 40px 80px -32px rgba(18,18,18,.35),0 10px 28px rgba(18,18,18,.10);
+  --shadow-red:0 14px 34px -14px rgba(138,0,0,.55);
+
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --maxw:1240px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--cream)}
+body{
+  margin:0;font-family:var(--font);color:var(--body);background:var(--cream);
+  font-size:16.5px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  font-feature-settings:"cv02","cv03","cv04","ss01"
+}
+img{max-width:100%;display:block}
+a{color:var(--crimson)}
+h1,h2,h3,h4{font-family:var(--font);color:var(--ink);margin:0;line-height:1.08;letter-spacing:-.038em;font-weight:800}
+h1{font-weight:900;letter-spacing:-.045em}
+h3,h4{font-weight:700;letter-spacing:-.025em}
+p{margin:0 0 1.05em}
+strong{color:var(--ink);font-weight:700}
+::selection{background:rgba(138,0,0,.16);color:var(--ink)}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px;position:relative;z-index:2}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55em;
+  font-weight:700;font-size:15.5px;letter-spacing:-.012em;
+  padding:15px 28px;border-radius:var(--radius);border:1.5px solid transparent;
+  text-decoration:none;cursor:pointer;position:relative;
+  transition:transform .18s cubic-bezier(.2,.8,.3,1),box-shadow .24s,background .18s,border-color .18s,color .18s
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn:focus-visible{outline:2.5px solid var(--crimson);outline-offset:3px}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:var(--shadow-red)}
+.btn-primary:hover{box-shadow:0 20px 44px -14px rgba(138,0,0,.7)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-outline{background:var(--white);color:var(--ink);border-color:var(--line-2)}
+.btn-outline:hover{border-color:var(--crimson);color:var(--crimson)}
+.btn-onDark{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.28)}
+.btn-onDark:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.5)}
+.btn-gold{background:var(--gold);color:#2A1F08}
+.btn-gold:hover{background:#E0C08A}
+.btn-lg{padding:18px 34px;font-size:16.5px}
+.btn-block{width:100%}
+
+/* ---------- bits ---------- */
+.eyebrow{font-weight:800;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--crimson);margin:0 0 16px}
+.eyebrow.on-dark{color:var(--gold)}
+.lede{font-size:19.5px;line-height:1.6;color:var(--muted);font-weight:400}
+.small{font-size:13.5px;color:var(--muted)}
+.tiny{font-size:12px;line-height:1.72;color:var(--faint)}
+.pill{
+  display:inline-flex;align-items:center;gap:9px;padding:8px 16px 8px 12px;border-radius:999px;
+  background:var(--white);border:1px solid var(--line-2);box-shadow:var(--shadow-s);
+  font-size:13px;font-weight:600;color:var(--ink)
+}
+.pill .dot{width:6px;height:6px;border-radius:50%;background:var(--crimson);
+  box-shadow:0 0 0 3px rgba(138,0,0,.15);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(138,0,0,.15)}50%{box-shadow:0 0 0 6px rgba(138,0,0,.04)}}
+
+/* ============================================================
+   Header
+   ============================================================ */
+.announce{
+  background:var(--ink);color:#E8E4DE;text-align:center;font-size:12.5px;font-weight:500;
+  padding:10px 24px;position:relative;z-index:3;letter-spacing:.01em
+}
+.announce strong{color:var(--gold);font-weight:700}
+.announce a{color:#fff;text-underline-offset:3px}
+
+.site-header{position:sticky;top:0;z-index:60;background:rgba(250,248,245,.90);
+  backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:36px;height:76px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.brand-mark{width:36px;height:36px;flex:0 0 36px}
+.brand-word{font-size:23px;font-weight:900;color:var(--ink);letter-spacing:-.055em}
+.brand-word i{font-style:normal;color:var(--crimson)}
+.nav-links{display:flex;gap:30px;margin-left:4px}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:600;padding:4px 0;position:relative;transition:color .16s}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;border-radius:2px;
+  background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .22s cubic-bezier(.2,.8,.3,1)}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:18px}
+.nav-phone{text-decoration:none;text-align:right;line-height:1.15;display:flex;align-items:center;gap:10px}
+.nav-phone .ic{width:34px;height:34px;border-radius:50%;background:var(--crimson-dim);
+  display:grid;place-items:center;flex:0 0 34px}
+.nav-phone .ic svg{width:15px;height:15px;stroke:var(--crimson);fill:none;stroke-width:2}
+.nav-phone .lbl{display:block;font-size:10.5px;color:var(--faint);letter-spacing:.05em;font-weight:600}
+.nav-phone .n{font-size:16px;font-weight:800;color:var(--ink);letter-spacing:-.03em}
+
+.burger{display:none;background:var(--white);border:1px solid var(--line-2);border-radius:var(--radius);padding:11px 12px;cursor:pointer;line-height:0}
+.burger span{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;transition:transform .22s,opacity .18s}
+.burger span+span{margin-top:4.5px}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mobile-menu{display:none;border-top:1px solid var(--line);background:var(--white)}
+.mobile-menu.open{display:block}
+.mobile-menu .wrap{padding-top:12px;padding-bottom:22px}
+.mobile-menu a.m-link{display:block;padding:15px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:16px;font-weight:600}
+.mobile-menu .m-cta{display:grid;gap:10px;margin-top:20px}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero{position:relative;overflow:hidden;padding:78px 0 96px}
+.hero::before{
+  content:"";position:absolute;width:900px;height:900px;border-radius:50%;
+  background:radial-gradient(circle,rgba(138,0,0,.07),transparent 65%);
+  top:-420px;right:-260px;pointer-events:none;z-index:0
+}
+.hero::after{
+  content:"";position:absolute;width:620px;height:620px;border-radius:50%;
+  background:radial-gradient(circle,rgba(213,177,118,.18),transparent 68%);
+  bottom:-340px;left:-220px;pointer-events:none;z-index:0
+}
+.hero-grid{display:grid;grid-template-columns:1fr 476px;gap:64px;align-items:start}
+.hero h1{font-size:clamp(42px,5.6vw,68px);margin:24px 0 24px}
+.hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{max-width:530px;margin-bottom:32px}
+.hero-checks{list-style:none;padding:0;margin:0 0 36px;display:grid;gap:13px}
+.hero-checks li{display:flex;gap:13px;align-items:flex-start;font-size:15.5px;color:var(--body)}
+.tick{flex:0 0 21px;width:21px;height:21px;border-radius:50%;background:var(--crimson);
+  display:grid;place-items:center;margin-top:2px}
+.tick svg{width:10px;height:10px;stroke:#fff;stroke-width:3.4;fill:none}
+.hero-marks{display:flex;gap:9px;flex-wrap:wrap;padding-top:30px;border-top:1px solid var(--line)}
+.mark{border:1px solid var(--line-2);border-radius:8px;padding:9px 14px;background:var(--white);
+  font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+
+/* ---------- call-or-apply band ---------- */
+.two-ways{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line-2);
+  border-radius:var(--radius-lg);overflow:hidden;background:var(--white);margin-bottom:34px;box-shadow:var(--shadow-s)}
+.way{padding:20px 22px;display:flex;gap:14px;align-items:flex-start}
+.way+.way{border-left:1px solid var(--line)}
+.way .ic{width:38px;height:38px;border-radius:11px;flex:0 0 38px;display:grid;place-items:center;background:var(--crimson-dim)}
+.way .ic svg{width:17px;height:17px;stroke:var(--crimson);fill:none;stroke-width:2}
+.way h4{font-size:14.5px;margin-bottom:3px}
+.way p{font-size:12.5px;color:var(--muted);margin:0;line-height:1.5}
+.way a{font-weight:800;color:var(--crimson);text-decoration:none;font-size:15px;letter-spacing:-.02em}
+
+/* ============================================================
+   Application card
+   ============================================================ */
+.app-card{
+  background:linear-gradient(145deg,var(--white) 0%,var(--cream) 100%);
+  border:1px solid var(--line-2);border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-lg);overflow:hidden;position:sticky;top:96px
+}
+.app-card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--grad);z-index:2}
+.app-head{padding:24px 26px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:16px;background:var(--white)}
+.ring{position:relative;width:54px;height:54px;flex:0 0 54px}
+.ring svg{transform:rotate(-90deg);display:block}
+.ring circle{fill:none;stroke-width:4.5;stroke-linecap:round}
+.ring .bg{stroke:var(--line)}
+.ring .fg{stroke:url(#ringGrad);transition:stroke-dashoffset .55s cubic-bezier(.2,.8,.3,1)}
+.ring .lbl{position:absolute;inset:0;display:grid;place-items:center;font-size:11.5px;font-weight:800;color:var(--ink)}
+.app-head h3{font-size:18px;margin-bottom:3px;font-weight:800}
+.app-head p{margin:0;font-size:12.5px;color:var(--faint);font-weight:500}
+.app-body{padding:24px 26px 26px}
+
+.step{display:none}
+.step.on{display:block;animation:slide .34s cubic-bezier(.2,.8,.3,1)}
+@keyframes slide{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+
+.q{font-size:15px;font-weight:700;color:var(--ink);margin:0 0 14px;letter-spacing:-.02em}
+.field{margin-bottom:15px}
+.field label{display:block;font-size:10.5px;font-weight:800;color:var(--faint);margin-bottom:7px;letter-spacing:.12em;text-transform:uppercase}
+.field input,.field select{
+  width:100%;padding:13px 14px;border:1.5px solid var(--line-2);border-radius:var(--radius);
+  font-family:var(--font);font-size:15.5px;color:var(--ink);background:var(--white);font-weight:500;
+  transition:border-color .16s,box-shadow .16s
+}
+.field input::placeholder{color:var(--faint);font-weight:400}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5l5-5' stroke='%23666' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;background-size:11px;padding-right:36px}
+.field input:focus,.field select:focus{outline:none;border-color:var(--crimson);box-shadow:0 0 0 3px rgba(138,0,0,.10)}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+
+.amt-box{background:var(--ink);border-radius:var(--radius-lg);padding:22px;text-align:center;margin-bottom:16px;position:relative;overflow:hidden}
+.amt-box::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(239,67,67,.28),transparent 70%);top:-110px;right:-70px}
+.amt-box .v{font-size:46px;font-weight:900;letter-spacing:-.05em;line-height:1;color:#fff;position:relative}
+.amt-box .c{font-size:10.5px;color:rgba(255,255,255,.55);margin-top:8px;letter-spacing:.16em;font-weight:700;position:relative}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:99px;
+  background:var(--line-2);outline:none;margin:8px 0 6px;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:24px;height:24px;border-radius:50%;
+  background:var(--crimson);border:3px solid #fff;cursor:pointer;box-shadow:0 2px 10px rgba(138,0,0,.45)}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--crimson);
+  border:3px solid #fff;cursor:pointer;box-shadow:0 2px 10px rgba(138,0,0,.45)}
+.scale{display:flex;justify-content:space-between;font-size:11px;color:var(--faint);font-weight:600}
+
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.choices.one{grid-template-columns:1fr}
+.choice{
+  border:1.5px solid var(--line-2);border-radius:var(--radius);padding:13px 14px;cursor:pointer;
+  font-size:14px;font-weight:600;color:var(--body);background:var(--white);transition:all .16s;
+  display:flex;align-items:center;justify-content:space-between;gap:8px
+}
+.choice:hover{border-color:var(--crimson);color:var(--crimson)}
+.choice.sel{border-color:var(--crimson);background:var(--crimson);color:#fff;box-shadow:0 6px 16px -8px rgba(138,0,0,.6)}
+.choice .sub{font-size:11.5px;color:var(--faint);font-weight:500}
+.choice.sel .sub{color:rgba(255,255,255,.75)}
+
+.consent{font-size:10.5px;line-height:1.68;color:var(--muted);background:var(--cream-2);border:1px solid var(--line);
+  border-radius:var(--radius);padding:13px;margin:6px 0 13px;max-height:140px;overflow-y:auto}
+.consent strong{color:var(--ink)}
+.consent-row{display:flex;gap:10px;align-items:flex-start;margin-bottom:15px}
+.consent-row input{margin-top:3px;width:16px;height:16px;flex:0 0 auto;accent-color:var(--crimson)}
+.consent-row label{font-size:11.5px;color:var(--muted);line-height:1.58}
+
+.back{background:none;border:0;color:var(--faint);font-size:13.5px;font-family:var(--font);cursor:pointer;padding:12px 0 0;font-weight:600}
+.back:hover{color:var(--ink)}
+.app-foot{padding:13px 26px;background:var(--cream-2);border-top:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;gap:8px;font-size:11.5px;color:var(--muted);font-weight:500}
+.app-foot svg{width:13px;height:13px;stroke:var(--green);fill:none;stroke-width:2.2}
+
+.quote-strip{
+  background:var(--gold-dim);border:1px solid rgba(213,177,118,.45);border-radius:var(--radius-lg);
+  padding:15px 17px;margin-bottom:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px
+}
+.quote-strip .k{font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-d);font-weight:800}
+.quote-strip .v{font-size:21px;font-weight:800;color:var(--ink);letter-spacing:-.035em;margin-top:3px}
+.quote-strip .v small{font-size:12px;color:var(--muted);font-weight:600}
+
+.done{text-align:center;padding:16px 0}
+.done .ic{width:62px;height:62px;border-radius:50%;background:var(--grad);display:grid;place-items:center;margin:0 auto 16px;
+  box-shadow:var(--shadow-red)}
+.done .ic svg{width:26px;height:26px;stroke:#fff;stroke-width:3.2;fill:none}
+.done h3{font-size:22px;margin-bottom:9px}
+.done p{font-size:14.5px}
+.done .callnow{display:block;margin-top:16px;font-size:19px;font-weight:900;color:var(--crimson);text-decoration:none;letter-spacing:-.03em}
+
+/* ============================================================
+   Sections
+   ============================================================ */
+section{padding:100px 0;position:relative}
+.sec-white{background:var(--white)}
+.sec-cream{background:var(--cream-2)}
+.sec-dark{background:var(--ink);color:#B9B4AE}
+.sec-dark h2,.sec-dark h3,.sec-dark h4{color:#fff}
+.sec-head{max-width:740px;margin:0 0 58px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head h2{font-size:clamp(32px,4vw,52px);margin-bottom:18px}
+.sec-head p{font-size:18.5px;margin:0;color:var(--muted)}
+.sec-dark .sec-head p{color:#A8A29B}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);overflow:hidden}
+.stat{padding:34px 26px;background:var(--ink)}
+.stat .n{font-size:42px;font-weight:900;line-height:1;letter-spacing:-.05em;color:#fff;font-variant-numeric:tabular-nums}
+.stat .n em{font-style:normal;color:var(--gold)}
+.stat .l{font-size:13px;color:#96918B;margin-top:11px}
+
+/* estimator */
+.est{display:grid;grid-template-columns:1fr 1.02fr;gap:52px;align-items:start}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:34px;box-shadow:var(--shadow-s)}
+.offer{background:var(--ink);border-radius:var(--radius-lg);overflow:hidden;position:relative;box-shadow:var(--shadow-lg)}
+.offer::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--grad);z-index:2}
+.offer::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;
+  background:radial-gradient(circle,rgba(239,67,67,.20),transparent 70%);top:-140px;right:-100px;pointer-events:none}
+.offer-top{padding:30px 30px 24px;border-bottom:1px solid rgba(255,255,255,.10);position:relative}
+.offer-top .badge{display:inline-flex;align-items:center;gap:7px;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;font-weight:800;color:var(--gold);margin-bottom:14px}
+.offer-top .badge .dot{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.offer-pmt{font-size:56px;font-weight:900;letter-spacing:-.05em;line-height:1;color:#fff;font-variant-numeric:tabular-nums}
+.offer-pmt span{font-size:19px;color:#96918B;font-weight:600;letter-spacing:-.01em}
+.offer-top .sub{font-size:13px;color:#96918B;margin-top:12px}
+.offer-rows{padding:10px 30px 24px;position:relative}
+.orow{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.orow:last-child{border-bottom:0}
+.orow .k{font-size:14px;color:#96918B}
+.orow .v{font-size:19px;font-weight:800;color:#fff;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.orow.hl .v{color:var(--gold)}
+.offer-cta{padding:0 30px 30px;position:relative}
+
+/* tables */
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--white);box-shadow:var(--shadow-s)}
+table.data{width:100%;border-collapse:collapse;min-width:680px;font-size:14.5px}
+table.data th,table.data td{padding:16px 22px;text-align:left;border-bottom:1px solid var(--line);color:var(--body);vertical-align:top}
+table.data thead th{background:var(--ink);color:#fff;font-weight:700;font-size:11.5px;
+  letter-spacing:.13em;text-transform:uppercase;border-bottom:0}
+table.data thead th.feat{background:var(--crimson)}
+table.data tbody tr:last-child td{border-bottom:0}
+table.data tbody tr:hover{background:var(--cream)}
+table.data td strong{color:var(--ink)}
+table.data td.feat{background:var(--crimson-dim);color:var(--ink);font-weight:700}
+
+/* cards */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:34px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:32px;
+  transition:border-color .24s,transform .24s cubic-bezier(.2,.8,.3,1),box-shadow .24s;box-shadow:var(--shadow-s)}
+.card:hover{border-color:var(--line-2);transform:translateY(-4px);box-shadow:var(--shadow)}
+.card h3{font-size:19.5px;margin-bottom:11px}
+.card p{font-size:15px;margin-bottom:0}
+.card .ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;margin-bottom:20px;
+  background:var(--crimson-dim);border:1px solid var(--crimson-line)}
+.card .ic svg{width:21px;height:21px;stroke:var(--crimson);stroke-width:1.9;fill:none}
+
+.purposes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.purpose{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px;
+  transition:border-color .22s,transform .22s,box-shadow .22s;text-align:center;box-shadow:var(--shadow-s)}
+.purpose:hover{border-color:var(--crimson);transform:translateY(-3px);box-shadow:var(--shadow)}
+.purpose .ic{width:40px;height:40px;margin:0 auto 14px;border-radius:12px;background:var(--gold-dim);
+  display:grid;place-items:center;border:1px solid rgba(213,177,118,.4)}
+.purpose .ic svg{width:18px;height:18px;stroke:var(--gold-d);stroke-width:1.9;fill:none}
+.purpose h4{font-size:15px;margin-bottom:5px}
+.purpose p{font-size:12.5px;color:var(--faint);margin:0}
+
+/* process */
+.process{display:grid;gap:0;border-left:2px solid var(--line);margin-left:24px}
+.p-step{position:relative;padding:0 0 44px 46px}
+.p-step:last-child{padding-bottom:0}
+.p-step .dot{position:absolute;left:-24px;top:0;width:46px;height:46px;border-radius:50%;
+  background:var(--grad);color:#fff;display:grid;place-items:center;font-size:16px;font-weight:900;
+  box-shadow:0 6px 16px -6px rgba(138,0,0,.6),0 0 0 6px var(--cream)}
+.sec-white .p-step .dot{box-shadow:0 6px 16px -6px rgba(138,0,0,.6),0 0 0 6px var(--white)}
+.p-step h3{font-size:20px;margin-bottom:9px}
+.p-step p{font-size:15.5px;margin-bottom:0}
+.p-step .when{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-d);font-weight:800;margin-bottom:6px}
+
+/* quotes */
+.quote{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:32px;display:flex;flex-direction:column;box-shadow:var(--shadow-s)}
+.stars{display:flex;gap:3px;margin-bottom:16px}
+.stars svg{width:16px;height:16px;fill:var(--yellow)}
+.quote p{font-size:16.5px;color:var(--ink);flex:1;margin-bottom:22px;line-height:1.6;font-weight:500}
+.who{display:flex;align-items:center;gap:13px}
+.av{width:42px;height:42px;border-radius:50%;background:var(--grad);display:grid;place-items:center;color:#fff;font-weight:800;font-size:14px}
+.who .n2{font-weight:800;font-size:14.5px;color:var(--ink)}
+.who .m{font-size:12.5px;color:var(--faint)}
+
+/* callouts */
+.callout{border:1px solid var(--crimson-line);background:var(--crimson-dim);border-left:4px solid var(--crimson);
+  border-radius:0 var(--radius) var(--radius) 0;padding:24px 28px;margin:30px 0}
+.callout.gold{border-color:rgba(213,177,118,.45);border-left-color:var(--gold);background:var(--gold-dim)}
+.callout h4{font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;color:var(--crimson)}
+.callout.gold h4{color:var(--gold-d)}
+.callout p{font-size:15px}
+.callout p:last-child{margin-bottom:0}
+
+/* FAQ */
+.faq{border-top:2px solid var(--ink)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:26px 46px 26px 0;position:relative;
+  font-size:18.5px;color:var(--ink);font-weight:700;letter-spacing:-.025em;transition:color .16s}
+.faq summary:hover{color:var(--crimson)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:32px;width:10px;height:10px;
+  border-right:2.2px solid var(--muted);border-bottom:2.2px solid var(--muted);
+  transform:rotate(45deg);transition:transform .24s cubic-bezier(.2,.8,.3,1),border-color .2s}
+.faq details[open] summary{color:var(--crimson)}
+.faq details[open] summary::after{transform:rotate(-135deg);border-color:var(--crimson)}
+.faq .a{padding:0 46px 28px 0;font-size:15.5px}
+.faq .a p:last-child{margin-bottom:0}
+
+/* CTA */
+.cta{position:relative;overflow:hidden;text-align:center;background:var(--ink)}
+.cta::before{content:"";position:absolute;width:900px;height:900px;border-radius:50%;
+  background:radial-gradient(circle,rgba(138,0,0,.55),transparent 62%);top:-500px;left:50%;transform:translateX(-50%);pointer-events:none}
+.cta h2{font-size:clamp(34px,4.6vw,56px);margin-bottom:20px;color:#fff}
+.cta p{font-size:19px;color:#A8A29B;max-width:580px;margin:0 auto 36px}
+.cta-acts{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-phone{margin-top:30px;font-size:14px;color:#96918B}
+.cta-phone a{color:var(--gold);font-weight:800;text-decoration:none;font-size:22px;letter-spacing:-.03em;display:block;margin-top:6px}
+
+/* footer */
+footer{background:#0C0C0C;color:#8A857F;padding:74px 0 32px;font-size:14px;position:relative;z-index:2}
+.f-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:46px;padding-bottom:46px;border-bottom:1px solid rgba(255,255,255,.10)}
+.f-grid h4{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;margin-bottom:18px;font-weight:800}
+.f-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+.f-grid a{color:#8A857F;text-decoration:none;transition:color .16s}
+.f-grid a:hover{color:var(--gold)}
+.f-brand .brand-word{color:#fff}
+.f-brand .brand-word i{color:var(--red)}
+.f-brand p{margin:18px 0 0;max-width:340px;line-height:1.72}
+.f-contact{margin-top:20px;display:grid;gap:7px}
+.f-contact strong{color:#fff;font-weight:700}
+.f-legal{padding-top:34px;font-size:11.5px;line-height:1.78;color:#5E5A55}
+.f-legal h5{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#8A857F;margin:0 0 12px;font-weight:800}
+.f-legal p{margin:0 0 13px}
+.f-legal strong{color:#8A857F}
+.f-legal a{color:#8A857F}
+.f-bottom{margin-top:26px;padding-top:24px;border-top:1px solid rgba(255,255,255,.10);
+  display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:12px}
+.f-bottom nav a{text-decoration:none;margin-left:20px}
+
+.m-cta-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:70;background:rgba(255,255,255,.97);
+  backdrop-filter:blur(14px);border-top:1px solid var(--line-2);padding:12px 16px;gap:10px;
+  box-shadow:0 -6px 24px rgba(18,18,18,.10)}
+
+[data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.2,.8,.3,1),transform .7s cubic-bezier(.2,.8,.3,1)}
+[data-reveal].in{opacity:1;transform:none}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width:1080px){
+  .hero-grid{grid-template-columns:1fr 400px;gap:44px}
+  .est{grid-template-columns:1fr;gap:36px}
+  .grid-4,.purposes{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:880px){
+  body{font-size:16px;padding-bottom:76px}
+  section{padding:68px 0}
+  .nav-links,.nav-phone{display:none}
+  .burger{display:block}
+  .nav{height:66px;gap:12px}
+  .site-header .btn-primary{padding:11px 17px;font-size:13.5px}
+  .hero{padding:48px 0 66px}
+  .hero-grid{grid-template-columns:1fr;gap:42px}
+  .app-card{position:static}
+  .grid-3,.grid-2,.grid-4,.purposes{grid-template-columns:1fr}
+  .two-ways{grid-template-columns:1fr}
+  .way+.way{border-left:0;border-top:1px solid var(--line)}
+  .m-cta-bar{display:flex}
+  .f-grid{grid-template-columns:1fr}
+  .f-bottom nav a{margin:0 20px 0 0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  [data-reveal]{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#8A0000"/><stop offset="100%" stop-color="#EF4343"/>
+  </linearGradient>
+  <linearGradient id="coinGrad" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0%" stop-color="#8A0000"/><stop offset="100%" stop-color="#EF4343"/>
+  </linearGradient>
+</defs></svg>
+
+<div class="announce">
+  No fees to apply &nbsp;·&nbsp; Speak with a specialist 7 days a week &nbsp;·&nbsp;
+  <strong>Funds as soon as the next business day</strong>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <!-- Mark: a coin with a rising trend line breaking out of it — money + growth/lending -->
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-label="fundii">
+        <circle cx="17.5" cy="22.5" r="13" stroke="url(#coinGrad)" stroke-width="2.8"/>
+        <circle cx="17.5" cy="22.5" r="8.4" stroke="#D5B176" stroke-width="1.5" opacity=".85"/>
+        <path d="M17.5 17.4v10.2M20.6 19.3a3.4 3.4 0 0 0-3.1-1.9c-1.9 0-3.1 1-3.1 2.4 0 3.4 6.2 1.7 6.2 5.1 0 1.4-1.2 2.4-3.1 2.4a3.4 3.4 0 0 1-3.1-1.9"
+              stroke="url(#coinGrad)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M27.5 15.5 33 10" stroke="url(#coinGrad)" stroke-width="2.8" stroke-linecap="round"/>
+        <path d="M27.4 10h5.9v5.9" stroke="url(#coinGrad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-word">fund<i>ii</i></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#apply">Apply</a>
+      <a href="#estimate">Payment estimator</a>
+      <a href="#how">How it works</a>
+      <a href="#rates">Rates &amp; terms</a>
+      <a href="#uses">Loan purposes</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:18884048613">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span><span class="lbl">Questions? Call us</span><span class="n">(888) 404-8613</span></span>
+      </a>
+      <a href="#apply" class="btn btn-primary">Apply now</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mmenu">
+    <div class="wrap">
+      <a class="m-link" href="#apply">Apply</a>
+      <a class="m-link" href="#estimate">Payment estimator</a>
+      <a class="m-link" href="#how">How it works</a>
+      <a class="m-link" href="#rates">Rates &amp; terms</a>
+      <a class="m-link" href="#uses">Loan purposes</a>
+      <a class="m-link" href="#faq">FAQ</a>
+      <div class="m-cta">
+        <a href="#apply" class="btn btn-primary btn-block">Apply now</a>
+        <a href="tel:18884048613" class="btn btn-outline btn-block">Call (888) 404-8613</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill"><span class="dot"></span> Fixed-rate personal loans · $1,000 to $100,000</span>
+      <h1>Money that moves<br>as fast as <em>you need it</em>.</h1>
+      <p class="lede">
+        Straightforward personal loans with one fixed payment and a payoff date you know from day one.
+        Tell us what you need and a specialist walks you through what's available.
+      </p>
+
+      <!-- two ways to start -->
+      <div class="two-ways">
+        <div class="way">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div>
+            <h4>Call and ask</h4>
+            <p style="margin-bottom:4px">Talk it through with a real person, no form required.</p>
+            <a href="tel:18884048613">(888) 404-8613</a>
+          </div>
+        </div>
+        <div class="way">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg></span>
+          <div>
+            <h4>Or fill the form</h4>
+            <p style="margin-bottom:4px">Two minutes, and we'll call you back with your options.</p>
+            <a href="#apply">Start the form →</a>
+          </div>
+        </div>
+      </div>
+
+      <ul class="hero-checks">
+        <li><span class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Fixed rates and a fixed monthly payment that never changes</span></li>
+        <li><span class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Terms from 24 to 84 months — pick the payment that fits your budget</span></li>
+        <li><span class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>No prepayment penalty, ever. Pay it off early and keep the interest</span></li>
+        <li><span class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Nothing to pay us — not to apply, not to talk, not ever</span></li>
+      </ul>
+
+      <div class="hero-marks">
+        <!-- PLACEHOLDER — verify before publishing -->
+        <span class="mark">256-bit Encryption</span>
+        <span class="mark">SOC 2 Type II</span>
+        <span class="mark">Equal Credit Opportunity Lender</span>
+        <span class="mark">NMLS ID #0000000</span>
+      </div>
+    </div>
+
+    <!-- ---------------- application ---------------- -->
+    <aside class="app-card" id="apply">
+      <div class="app-head">
+        <div class="ring">
+          <svg width="54" height="54" viewBox="0 0 54 54">
+            <circle class="bg" cx="27" cy="27" r="22"/>
+            <circle class="fg" id="ringFg" cx="27" cy="27" r="22" stroke-dasharray="138.2" stroke-dashoffset="110.6"/>
+          </svg>
+          <div class="lbl" id="ringLbl">20%</div>
+        </div>
+        <div>
+          <h3 id="stepTitle">How much do you need?</h3>
+          <p id="stepMeta">Step 1 of 5 · about 2 minutes</p>
+        </div>
+      </div>
+
+      <form class="app-body" id="app" novalidate>
+
+        <!-- STEP 1 — amount + purpose -->
+        <div class="step on" data-step="1">
+          <div class="amt-box">
+            <div class="v num" id="amtOut">$15,000</div>
+            <div class="c">LOAN AMOUNT</div>
+          </div>
+          <input type="range" id="amt" min="1000" max="100000" step="500" value="15000" aria-label="Loan amount">
+          <div class="scale"><span>$1,000</span><span>$50,000</span><span>$100,000</span></div>
+
+          <p class="q" style="margin-top:20px">What's the loan for?</p>
+          <div class="choices" data-group="purpose">
+            <div class="choice" tabindex="0" role="button">Debt consolidation</div>
+            <div class="choice" tabindex="0" role="button">Home improvement</div>
+            <div class="choice" tabindex="0" role="button">Major purchase</div>
+            <div class="choice" tabindex="0" role="button">Medical expenses</div>
+            <div class="choice" tabindex="0" role="button">Auto or repairs</div>
+            <div class="choice" tabindex="0" role="button">Something else</div>
+          </div>
+          <button type="button" class="btn btn-primary btn-block btn-lg" style="margin-top:18px" data-next="2">Continue</button>
+          <p class="tiny" style="text-align:center;margin:12px 0 0">
+            Rather talk it through? Call <a href="tel:18884048613">(888) 404-8613</a>
+          </p>
+        </div>
+
+        <!-- STEP 2 — timing + term -->
+        <div class="step" data-step="2">
+          <p class="q">How soon do you need the funds?</p>
+          <div class="choices one" data-group="timing">
+            <div class="choice" tabindex="0" role="button"><span>As soon as possible</span><span class="sub">Within days</span></div>
+            <div class="choice" tabindex="0" role="button"><span>In the next 2 weeks</span><span class="sub">Planning ahead</span></div>
+            <div class="choice" tabindex="0" role="button"><span>Within a month</span><span class="sub">No rush</span></div>
+            <div class="choice" tabindex="0" role="button"><span>Just exploring</span><span class="sub">Comparing options</span></div>
+          </div>
+          <div class="field" style="margin-top:20px">
+            <label for="term">Preferred repayment term</label>
+            <select id="term">
+              <option value="24">24 months</option>
+              <option value="36" selected>36 months</option>
+              <option value="48">48 months</option>
+              <option value="60">60 months</option>
+              <option value="72">72 months</option>
+              <option value="84">84 months</option>
+            </select>
+            <p class="tiny" style="margin:6px 0 0">A longer term lowers the monthly payment and raises the
+              total interest you pay.</p>
+          </div>
+          <button type="button" class="btn btn-primary btn-block btn-lg" data-next="3">Continue</button>
+          <button type="button" class="back" data-back="1">← Back</button>
+        </div>
+
+        <!-- STEP 3 — income -->
+        <div class="step" data-step="3">
+          <div class="quote-strip">
+            <div><div class="k">Requested</div><div class="v num" id="miniAmt">$15,000</div></div>
+            <div><div class="k">Est. monthly</div><div class="v num" id="miniPmt">$528<small>/mo</small></div></div>
+          </div>
+          <div class="field">
+            <label for="income">Annual income before tax</label>
+            <input id="income" type="text" inputmode="numeric" placeholder="$65,000" value="$65,000">
+            <p class="tiny" style="margin:6px 0 0">Include salary, self-employment, retirement, and other
+              regular income. Alimony or child support need not be disclosed unless you'd like it considered.</p>
+          </div>
+          <div class="field">
+            <label for="employ">Employment status</label>
+            <select id="employ">
+              <option>Employed full time</option>
+              <option>Employed part time</option>
+              <option>Self-employed</option>
+              <option>Retired</option>
+              <option>Military</option>
+              <option>Not currently employed</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="housing">Housing</label>
+            <select id="housing">
+              <option>I rent</option>
+              <option>I own with a mortgage</option>
+              <option>I own outright</option>
+              <option>Other arrangement</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary btn-block btn-lg" data-next="4">Continue</button>
+          <button type="button" class="back" data-back="2">← Back</button>
+        </div>
+
+        <!-- STEP 4 — identity -->
+        <div class="step" data-step="4">
+          <div class="field-row">
+            <div class="field"><label for="fn">First name</label><input id="fn" type="text" autocomplete="given-name"></div>
+            <div class="field"><label for="ln">Last name</label><input id="ln" type="text" autocomplete="family-name"></div>
+          </div>
+          <div class="field"><label for="addr">Home address</label><input id="addr" type="text" autocomplete="street-address" placeholder="Street address"></div>
+          <div class="field-row">
+            <div class="field"><label for="city">City</label><input id="city" type="text" autocomplete="address-level2"></div>
+            <div class="field"><label for="st">State</label>
+              <select id="st">
+                <option value="">Select…</option>
+                <option>Arizona</option><option>California</option><option>Colorado</option>
+                <option>Florida</option><option>Georgia</option><option>Illinois</option>
+                <option>Michigan</option><option>Nevada</option><option>New York</option>
+                <option>North Carolina</option><option>Ohio</option><option>Pennsylvania</option>
+                <option>Texas</option><option>Virginia</option><option>Washington</option>
+                <option>Other state</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-block btn-lg" data-next="5">Continue</button>
+          <button type="button" class="back" data-back="3">← Back</button>
+        </div>
+
+        <!-- STEP 5 — contact + consent -->
+        <div class="step" data-step="5">
+          <div class="field"><label for="em">Email address</label><input id="em" type="email" autocomplete="email"></div>
+          <div class="field"><label for="ph">Mobile phone</label><input id="ph" type="tel" autocomplete="tel" placeholder="(555) 010-0199"></div>
+          <div class="field">
+            <label for="best">Best time to reach you</label>
+            <select id="best">
+              <option>Morning (7a – 11a CT)</option>
+              <option>Midday (11a – 2p CT)</option>
+              <option>Afternoon (2p – 5p CT)</option>
+              <option>Evening (5p – 9p CT)</option>
+              <option>Any time</option>
+            </select>
+          </div>
+
+          <div class="consent">
+            <strong>Consent to be contacted.</strong> I give my express written consent for fundii, its
+            lending partners, and their service providers to contact me at the telephone number and
+            email address provided — including by automatic telephone dialing system, artificial or
+            prerecorded voice, and SMS text message — regarding loan options and related financial
+            services, even if that number appears on a federal, state, or corporate Do Not Call
+            registry. <strong>Consent is not a condition of receiving credit or of purchasing any goods
+            or services</strong>, and I may instead call
+            <a href="tel:18884048613">(888) 404-8613</a> to speak with a specialist. Message and data
+            rates may apply; message frequency varies. Reply STOP to opt out.<br><br>
+            <strong>Application review.</strong> I understand that submitting this form is an inquiry
+            only, is not an application for credit, and does not obligate me or any lender. If I later
+            choose to proceed with a specific lender, that lender will review my application and
+            verify the information I provide as part of its own underwriting process, and will provide
+            its own disclosures before any agreement is signed. I have read and agree to the
+            <a href="#legal">Privacy Policy</a>, <a href="#legal">Terms of Use</a>, and
+            <a href="#legal">Lending Disclosures</a>. I am at least 18 years old and a U.S. resident.
+          </div>
+
+          <div class="consent-row">
+            <input type="checkbox" id="ok">
+            <label for="ok"><strong>I agree to the consents above</strong> and confirm I am the
+              subscriber or customary user of the phone number provided. (Required)</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Submit my request</button>
+          <button type="button" class="back" data-back="4">← Back</button>
+        </div>
+
+        <!-- DONE -->
+        <div class="step" data-step="6">
+          <div class="done">
+            <div class="ic"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <h3>Request received</h3>
+            <p>A licensed specialist will call you at the time you selected — usually within one
+               business day — to walk through your options. Nothing is binding until you review a
+               lender's written terms and sign.</p>
+            <p style="margin:14px 0 0;font-size:13.5px">Don't want to wait?</p>
+            <a class="callnow" href="tel:18884048613">(888) 404-8613</a>
+            <p class="tiny" style="margin-top:16px"><em>Demo only — this mockup does not submit,
+               transmit, or store any information.</em></p>
+          </div>
+        </div>
+      </form>
+
+      <div class="app-foot">
+        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Bank-level encryption · No fees to apply · We never sell your data
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ==================== STATS ==================== -->
+<section class="sec-dark" style="padding:74px 0">
+  <div class="wrap">
+    <!-- PLACEHOLDER METRICS — replace with audited figures -->
+    <div class="stats">
+      <div class="stat"><div class="n num" data-count="100" data-prefix="$" data-suffix="k">$100k</div><div class="l">Maximum loan amount</div></div>
+      <div class="stat"><div class="n num" data-count="84" data-suffix=" mo">84 mo</div><div class="l">Longest available term</div></div>
+      <div class="stat"><div class="n num" data-count="1" data-suffix=" day">1 day</div><div class="l">Typical funding after approval</div></div>
+      <div class="stat"><div class="n num"><em>$0</em></div><div class="l">What fundii ever charges you</div></div>
+    </div>
+    <p class="tiny" style="margin-top:18px;color:#7A756F">
+      Maximum amounts and terms vary by lender, by state, and by application. Funding times are set by
+      the lender and its bank. Not all applicants qualify. See
+      <a href="#rates" style="color:#96918B">rates &amp; terms</a> and the representative example below.
+    </p>
+  </div>
+</section>
+
+<!-- ==================== ESTIMATOR ==================== -->
+<section id="estimate" class="sec-white">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Payment estimator</p>
+      <h2>See the payment before you talk to anyone</h2>
+      <p>Set the amount and the term to see what a loan would look like at a representative rate.
+         This is an illustration — your actual terms come from the lender.</p>
+    </div>
+
+    <div class="est">
+      <div class="panel">
+        <div class="field">
+          <label for="eAmt">Loan amount</label>
+          <div class="grad-text num" id="eAmtOut"
+               style="font-size:46px;font-weight:900;letter-spacing:-.05em;line-height:1;margin:8px 0 14px">$15,000</div>
+          <input type="range" id="eAmt" min="1000" max="100000" step="500" value="15000" aria-label="Loan amount">
+          <div class="scale"><span>$1,000</span><span>$50,000</span><span>$100,000</span></div>
+        </div>
+
+        <div class="field" style="margin-top:28px">
+          <label for="eTerm">Repayment term</label>
+          <select id="eTerm">
+            <option value="24">24 months</option>
+            <option value="36" selected>36 months</option>
+            <option value="48">48 months</option>
+            <option value="60">60 months</option>
+            <option value="72">72 months</option>
+            <option value="84">84 months</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="eApr">Assumed APR</label>
+          <select id="eApr">
+            <option value="9.99">9.99% — near the bottom of our range</option>
+            <option value="15.99" selected>15.99% — representative</option>
+            <option value="21.99">21.99%</option>
+            <option value="27.99">27.99%</option>
+            <option value="35.99">35.99% — top of our range</option>
+          </select>
+          <p class="tiny" style="margin:6px 0 0">Available APRs across our lending network run from
+            <strong>7.99% to 35.99%</strong>. Where you land depends on your application and the
+            lender's review.</p>
+        </div>
+
+        <div class="callout gold" style="margin-bottom:0">
+          <h4>Want the real number?</h4>
+          <p>A specialist can talk you through what's actually available for your situation — no form
+             needed. Call <strong><a href="tel:18884048613">(888) 404-8613</a></strong>, or
+             <a href="#apply">fill out the form</a> and we'll call you.</p>
+        </div>
+      </div>
+
+      <div class="offer">
+        <div class="offer-top">
+          <span class="badge"><span class="dot"></span> Illustration</span>
+          <div class="offer-pmt num" id="oPmt">$528<span> / month</span></div>
+          <div class="sub" id="oSub">$15,000 over 36 months at 15.99% APR</div>
+        </div>
+        <div class="offer-rows">
+          <div class="orow"><span class="k">Loan amount</span><span class="v num" id="oAmt">$15,000</span></div>
+          <div class="orow"><span class="k">Term</span><span class="v num" id="oTerm">36 months</span></div>
+          <div class="orow"><span class="k">Assumed APR</span><span class="v num" id="oApr">15.99%</span></div>
+          <div class="orow"><span class="k">Total of payments</span><span class="v num" id="oTotal">$19,008</span></div>
+          <div class="orow hl"><span class="k">Total interest</span><span class="v num" id="oInt">$4,008</span></div>
+          <div class="orow"><span class="k">Origination fee (0% – 8%)</span><span class="v num" id="oOrig">$0 – $1,200</span></div>
+        </div>
+        <div class="offer-cta">
+          <a href="#apply" class="btn btn-primary btn-block btn-lg">Apply now</a>
+          <a href="tel:18884048613" class="btn btn-onDark btn-block" style="margin-top:10px">Or call (888) 404-8613</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="tiny" style="margin-top:26px;max-width:920px">
+      Payments are calculated using standard amortization at the APR you select and exclude any
+      origination fee, which some lenders deduct from loan proceeds and which increases your effective
+      cost. This calculator is <strong>an illustration only — not an offer, a quote, or a commitment to
+      lend</strong>. Your actual rate, amount, term, and fees are set by the lender based on its own
+      review of your application. Not all applicants are approved.
+    </p>
+  </div>
+</section>
+
+<!-- ==================== HOW IT WORKS ==================== -->
+<section id="how">
+  <div class="wrap">
+    <div class="grid-2" style="gap:70px;align-items:start">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2 style="font-size:clamp(30px,3.7vw,46px);margin-bottom:20px">Two ways in. Same straight answer.</h2>
+        <p class="lede">fundii is not a lender. We're a comparison service — one conversation or one
+           short form, and lenders in our network compete to make you an offer.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+          <a href="#apply" class="btn btn-primary btn-lg">Start the form</a>
+          <a href="tel:18884048613" class="btn btn-outline btn-lg">Call (888) 404-8613</a>
+        </div>
+      </div>
+
+      <div class="process">
+        <div class="p-step">
+          <div class="dot">1</div>
+          <div class="when">2 minutes</div>
+          <h3>Tell us what you need</h3>
+          <p>Amount, purpose, timing, and a little about your income. Call and a specialist takes it
+             down for you, or fill the form yourself — whichever you prefer.</p>
+        </div>
+        <div class="p-step">
+          <div class="dot">2</div>
+          <div class="when">Same day</div>
+          <h3>We shop the network</h3>
+          <p>Our lending partners review what you've told us and come back with the terms they can
+             offer. A specialist walks you through what came back and what it means.</p>
+        </div>
+        <div class="p-step">
+          <div class="dot">3</div>
+          <div class="when">Your call</div>
+          <h3>Compare and choose</h3>
+          <p>APR, monthly payment, term, and origination fee side by side. Pick one, or walk away —
+             there's no cost either way and no obligation to accept anything.</p>
+        </div>
+        <div class="p-step">
+          <div class="dot">4</div>
+          <div class="when">1–3 business days</div>
+          <h3>Verify and get funded</h3>
+          <p>Your chosen lender verifies your details, gives you its own written disclosures, and once
+             you sign, deposits the funds — often the next business day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== RATES ==================== -->
+<section id="rates" class="sec-cream">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Rates &amp; terms</p>
+      <h2>What's available, by loan size</h2>
+      <p>Published ranges across our lending network. Every figure is a range because every lender
+         underwrites differently.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="data">
+        <thead>
+          <tr><th>Loan amount</th><th class="feat">APR range</th><th>Terms available</th>
+              <th>Origination fee</th><th>Typical use</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>$1,000 – $4,999</strong></td><td class="feat">12.99% – 35.99%</td>
+              <td>24 – 36 months</td><td>0% – 8%</td><td>Emergencies, repairs</td></tr>
+          <tr><td><strong>$5,000 – $14,999</strong></td><td class="feat">9.99% – 32.99%</td>
+              <td>24 – 60 months</td><td>0% – 7%</td><td>Consolidation, medical</td></tr>
+          <tr><td><strong>$15,000 – $34,999</strong></td><td class="feat">8.99% – 28.99%</td>
+              <td>24 – 72 months</td><td>0% – 6%</td><td>Consolidation, home projects</td></tr>
+          <tr><td><strong>$35,000 – $74,999</strong></td><td class="feat">7.99% – 24.99%</td>
+              <td>36 – 84 months</td><td>0% – 5%</td><td>Major renovation, large purchase</td></tr>
+          <tr><td><strong>$75,000 – $100,000</strong></td><td class="feat">7.99% – 19.99%</td>
+              <td>48 – 84 months</td><td>0% – 3%</td><td>Substantial projects</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tiny" style="margin-top:14px">
+      Amounts, rates, terms, and fees available to you depend on your application and the lender's
+      review, and vary by state. Not all applicants qualify for the lowest rate or the largest amount.
+    </p>
+
+    <div class="callout">
+      <h4>Representative example</h4>
+      <p>A <strong>$15,000</strong> loan with a <strong>36-month</strong> term at <strong>18.99%
+         APR</strong> would carry 36 monthly payments of <strong>$549.76</strong>, for a total of
+         payments of <strong>$19,791.36</strong>. This example assumes no origination fee; a fee, where
+         charged, is typically deducted from loan proceeds and raises your effective cost. APRs range
+         from <strong>7.99% to 35.99%</strong>. Your rate, amount, and term are determined by the
+         lender.</p>
+    </div>
+
+    <div class="callout gold">
+      <h4>Borrow carefully</h4>
+      <p>A personal loan is new debt. Consolidating credit cards only helps if you stop adding to the
+         cards afterward — otherwise you end up owing both. Longer terms lower the payment and raise
+         total interest. If your obligations already exceed what you can repay, a loan may be the wrong
+         tool; nonprofit credit counseling (<strong>nfcc.org</strong>), a
+         <a href="../sight-solutions-group/index.html">debt resolution program</a>, or a licensed
+         attorney may serve you better. We'll tell you when we think that's the case.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PURPOSES ==================== -->
+<section id="uses" class="sec-white">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Loan purposes</p>
+      <h2>What people borrow for</h2>
+    </div>
+    <div class="purposes">
+      <div class="purpose">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+        <h4>Debt consolidation</h4><p>One fixed payment instead of several revolving balances</p>
+      </div>
+      <div class="purpose">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg></div>
+        <h4>Home improvement</h4><p>Renovations without touching your home's equity</p>
+      </div>
+      <div class="purpose">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 2-3.5 2-5a9 9 0 0 0-18 0c0 1.5.5 3.5 2 5"/><path d="M12 9v6M9 12h6"/></svg></div>
+        <h4>Medical expenses</h4><p>Procedures and bills insurance didn't cover</p>
+      </div>
+      <div class="purpose">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
+        <h4>Major purchase</h4><p>Appliances, furniture, or a one-time large expense</p>
+      </div>
+      <div class="purpose">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 17h14v-5l-2-5H7l-2 5v5z"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/></svg></div>
+        <h4>Auto &amp; repairs</h4><p>Vehicle costs and the repairs that can't wait</p>
+      </div>
+      <div class="purpose">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg></div>
+        <h4>Life events</h4><p>Weddings, moving costs, and everything unplanned</p>
+      </div>
+      <div class="purpose">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <h4>Small business</h4><p>Working capital for sole proprietors and side ventures</p>
+      </div>
+      <div class="purpose">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h4>Emergency costs</h4><p>Vet bills, travel, and the things that come out of nowhere</p>
+      </div>
+    </div>
+    <p class="tiny" style="text-align:center;margin-top:26px">
+      Loans may not be used for post-secondary education expenses, gambling, illegal activity, or the
+      purchase of securities or cryptocurrency. Lender restrictions vary.
+    </p>
+  </div>
+</section>
+
+<!-- ==================== COMPARISON ==================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Compare</p>
+      <h2>A personal loan against the alternatives</h2>
+      <p>Including the cases where a personal loan is the wrong answer.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="data">
+        <thead>
+          <tr><th></th><th class="feat">Personal loan</th><th>Credit card</th>
+              <th>Home equity / HELOC</th><th>Payday / title loan</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Typical APR</strong></td><td class="feat">7.99% – 35.99% fixed</td>
+              <td>21% – 29% variable</td><td>7% – 12% variable</td><td>200% – 600%+</td></tr>
+          <tr><td><strong>Payment</strong></td><td class="feat">Fixed, never changes</td>
+              <td>Minimum only, balance lingers</td><td>Varies with rate</td><td>Lump sum, often rolled over</td></tr>
+          <tr><td><strong>Payoff date</strong></td><td class="feat">Known on day one</td>
+              <td>Can be decades</td><td>10 – 30 years</td><td>2 – 4 weeks, in theory</td></tr>
+          <tr><td><strong>Collateral at risk</strong></td><td class="feat">None — unsecured</td>
+              <td>None</td><td><strong>Your home</strong></td><td><strong>Your vehicle</strong></td></tr>
+          <tr><td><strong>Upfront cost</strong></td><td class="feat">0% – 8% origination</td>
+              <td>$0, or 3% – 5% to transfer</td><td>Closing costs, appraisal</td><td>High flat fees</td></tr>
+          <tr><td><strong>Best when</strong></td><td class="feat">You want a fixed payoff date at a lower rate</td>
+              <td>You'll clear it inside a 0% promo</td><td>You have equity and want the lowest rate</td>
+              <td><strong>Effectively never</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tiny" style="text-align:center;margin-top:18px">
+      General educational comparison using typical market ranges. fundii is not a lender and does not
+      provide financial, legal, or tax advice.
+    </p>
+  </div>
+</section>
+
+<!-- ==================== WHY ==================== -->
+<section class="sec-white">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Why fundii</p>
+      <h2>Built to be checked, not trusted blindly</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3>A real person, on the phone</h3>
+        <p>You never have to fill out anything to get answers. Call and a licensed specialist talks
+           you through what's available — no script, no quota, no pressure.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
+        <h3>APR, not "rates from"</h3>
+        <p>Every offer shows the full APR including origination fee, the total of payments, and the
+           payoff date. The number that matters is the one you can compare.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></div>
+        <h3>No fee to apply</h3>
+        <p>fundii charges you nothing, ever. We're paid by the lender you choose — stated here, and
+           again in our disclosures below.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 2"/></svg></div>
+        <h3>No prepayment penalty</h3>
+        <p>Every lender in our network permits early payoff without penalty. Pay it down faster and you
+           keep the interest you didn't spend.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Your data stays yours</h3>
+        <p>We share your details with lenders so they can make you an offer — that's the service. We
+           don't sell your information to anyone, and you can have it deleted on request.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>We'll tell you not to borrow</h3>
+        <p>If a loan would make your situation worse, we say so and point you to counseling, debt
+           resolution, or an attorney. It costs us a conversion. We do it anyway.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Borrower stories</p>
+      <h2>Straight answers, in their words</h2>
+    </div>
+    <!-- PLACEHOLDER TESTIMONIALS — replace with verified, consented statements -->
+    <div class="grid-3">
+      <div class="quote">
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+        </div>
+        <p>“I called instead of filling anything out. Ten minutes on the phone and I understood the
+           whole thing — including the origination fee, which nobody else had mentioned.”</p>
+        <div class="who"><div class="av">MR</div>
+          <div><div class="n2">Marcus R.</div><div class="m">$28,000 · 48 months · Phoenix, AZ</div></div></div>
+      </div>
+      <div class="quote">
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+        </div>
+        <p>“Filled the form on a Tuesday, had a call back that afternoon and the money Thursday. The
+           specialist actually talked me down from borrowing more than I needed.”</p>
+        <div class="who"><div class="av">DT</div>
+          <div><div class="n2">Denise T.</div><div class="m">$9,500 · 36 months · Columbus, OH</div></div></div>
+      </div>
+      <div class="quote">
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+        </div>
+        <p>“They told me straight out that borrowing wasn't the right move for me yet and pointed me
+           somewhere else. I came back eight months later and it worked out.”</p>
+        <div class="who"><div class="av">JL</div>
+          <div><div class="n2">Javier L.</div><div class="m">$16,000 · 60 months · Dallas, TX</div></div></div>
+      </div>
+    </div>
+    <p class="tiny" style="text-align:center;margin-top:26px;max-width:780px;margin-left:auto;margin-right:auto">
+      Statements reflect individual borrower experiences and are not representative of all applicants,
+      nor a guarantee of approval, rate, amount, or funding time. No compensation was provided in
+      exchange for these statements.
+    </p>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section id="faq" class="sec-white">
+  <div class="wrap" style="max-width:900px">
+    <div class="sec-head center">
+      <p class="eyebrow">Questions</p>
+      <h2>The things people ask first</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>How do I find out what I qualify for?</summary>
+        <div class="a"><p>Two ways, and neither costs anything. <strong>Call
+          <a href="tel:18884048613">(888) 404-8613</a></strong> and a licensed specialist will talk
+          through your situation and tell you what's available — no form, no commitment. Or
+          <a href="#apply">fill out the short form</a> and we'll call you back, usually within one
+          business day, at whatever time you pick.</p></div>
+      </details>
+      <details>
+        <summary>Is fundii the lender?</summary>
+        <div class="a"><p>No. fundii is a loan comparison and matching service. We are not a bank or a
+          lender and we make no lending decisions. Loans are originated by our participating lenders
+          and their partner banks, each with its own rates, terms, fees, and requirements. Your loan
+          agreement is with that lender, not with us.</p></div>
+      </details>
+      <details>
+        <summary>What does fundii charge me?</summary>
+        <div class="a"><p>Nothing. No application fee, no service fee, no charge of any kind to you. We
+          are compensated by the lender when a borrower we refer takes out a loan. That compensation
+          can vary by lender, which may influence the order in which offers are presented — so compare
+          the APR, not the position on the page.</p></div>
+      </details>
+      <details>
+        <summary>Does filling out the form commit me to anything?</summary>
+        <div class="a"><p>No. The form is an inquiry, not an application for credit. It creates no
+          obligation for you and none for any lender. You can stop at any point, and you're free to
+          decline every offer that comes back.</p></div>
+      </details>
+      <details>
+        <summary>How fast can I get the money?</summary>
+        <div class="a"><p>Most people hear back the same day or the next business day. After you choose
+          a lender and complete its verification — usually identity and income documents — funding
+          typically takes one to three business days, and some lenders fund the next business day.
+          Timing is set by the lender and its bank, not by us.</p></div>
+      </details>
+      <details>
+        <summary>What is an origination fee?</summary>
+        <div class="a"><p>A one-time fee some lenders charge to process the loan, generally 0% to 8% of
+          the amount borrowed. It's usually <strong>deducted from your proceeds</strong> — borrow
+          $15,000 with a 5% fee and $14,250 arrives — while you repay the full $15,000. A properly
+          calculated APR already includes it, which is why you should compare APR rather than the
+          interest rate.</p></div>
+      </details>
+      <details>
+        <summary>Can I pay the loan off early?</summary>
+        <div class="a"><p>Yes. Every lender in our network allows early payoff with no prepayment
+          penalty. Paying ahead reduces the total interest you pay. Origination fees already deducted
+          are not refunded.</p></div>
+      </details>
+      <details>
+        <summary>Should I consolidate my credit cards with a loan?</summary>
+        <div class="a"><p>Only if two things are true: the loan's APR is meaningfully lower than your
+          cards' blended rate, and you'll genuinely stop charging the cards back up. Consolidation
+          fails most often not because the math was wrong but because the balances came back. If your
+          obligations already exceed what you can repay, look at nonprofit counseling (nfcc.org) or a
+          <a href="../sight-solutions-group/index.html">debt resolution program</a> instead — and ask
+          us, we'll say so.</p></div>
+      </details>
+      <details>
+        <summary>What information will you ask for?</summary>
+        <div class="a"><p>How much you want, what it's for, when you need it, your income and
+          employment, and how to reach you. That's it to get the conversation started. If you decide to
+          move forward with a lender, that lender will ask for its own documentation and give you its
+          own disclosures before anything is signed.</p></div>
+      </details>
+      <details>
+        <summary>Are loans available in my state?</summary>
+        <div class="a"><p>Availability, maximum amounts, and rate caps vary by state, and some lenders
+          don't operate everywhere. If no lender in our network serves your state, we'll tell you
+          rather than take your information.</p></div>
+      </details>
+      <details>
+        <summary>Is my information safe?</summary>
+        <div class="a"><p>Your data is encrypted in transit and at rest, and we do not sell personal
+          information. We share your details with lenders in our network so they can present offers —
+          that's the service. You can request deletion at any time by emailing privacy@fundii.us.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="cta">
+  <div class="wrap">
+    <h2>Get a straight answer today.</h2>
+    <p>Call and talk it through, or send the form and we'll call you. Either way it's free, and there's
+       no obligation to take anything.</p>
+    <div class="cta-acts">
+      <a href="#apply" class="btn btn-primary btn-lg">Fill out the form</a>
+      <a href="tel:18884048613" class="btn btn-gold btn-lg">Call (888) 404-8613</a>
+    </div>
+    <div class="cta-phone">
+      Specialists available Mon–Fri 7am–9pm · Sat–Sun 8am–6pm CT
+      <a href="tel:18884048613">(888) 404-8613</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer id="legal">
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="brand" href="#top" style="text-decoration:none">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="17.5" cy="22.5" r="13" stroke="url(#coinGrad)" stroke-width="2.8"/>
+            <circle cx="17.5" cy="22.5" r="8.4" stroke="#D5B176" stroke-width="1.5" opacity=".85"/>
+            <path d="M17.5 17.4v10.2M20.6 19.3a3.4 3.4 0 0 0-3.1-1.9c-1.9 0-3.1 1-3.1 2.4 0 3.4 6.2 1.7 6.2 5.1 0 1.4-1.2 2.4-3.1 2.4a3.4 3.4 0 0 1-3.1-1.9"
+                  stroke="url(#coinGrad)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M27.5 15.5 33 10" stroke="url(#coinGrad)" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M27.4 10h5.9v5.9" stroke="url(#coinGrad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand-word">fund<i>ii</i></span>
+        </a>
+        <p>fundii is a personal loan comparison marketplace. We match consumers with lenders — we do
+           not make loans, and we never charge you a fee.</p>
+        <div class="f-contact">
+          <div><strong>(888) 404-8613</strong> · Mon–Fri 7a–9p CT</div>
+          <div>hello@fundii.us</div>
+          <div>1200 Commerce Street, Suite 400<br>Dallas, TX 75202</div>
+        </div>
+      </div>
+      <div>
+        <h4>Borrow</h4>
+        <ul>
+          <li><a href="#apply">Apply</a></li>
+          <li><a href="#estimate">Payment estimator</a></li>
+          <li><a href="#rates">Rates &amp; terms</a></li>
+          <li><a href="#uses">Loan purposes</a></li>
+          <li><a href="#how">How it works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="../sight-solutions-group/index.html">Sight Solutions Group</a></li>
+          <li><a href="../sight-solutions-group/contact.html">Contact</a></li>
+          <li><a href="../sight-solutions-group/complaints.html">Complaints &amp; licensing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="../sight-solutions-group/privacy.html">Privacy policy</a></li>
+          <li><a href="../sight-solutions-group/privacy.html#dnc">Do not call / Do not sell</a></li>
+          <li><a href="../sight-solutions-group/terms.html">Terms of use</a></li>
+          <li><a href="../sight-solutions-group/accessibility.html">Accessibility</a></li>
+          <li><a href="#legal">Lending disclosures</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="f-legal">
+      <h5>Important lending disclosures</h5>
+
+      <p><strong>fundii is not a lender.</strong> fundii, LLC operates a loan comparison and matching
+        service. We are not a bank, a lender, a credit union, a loan broker of record, a credit repair
+        organization, or a debt collector. We do not make loans, do not make lending decisions, do not
+        issue commitments to lend, and do not guarantee that you will be approved for any loan or
+        receive any particular rate, amount, or term. All loans are originated by third-party lenders
+        or their partner banks, each of which sets its own eligibility requirements, rates, fees, and
+        terms. <strong>Your loan agreement is with that lender, not with fundii.</strong> Review the
+        lender's disclosures and agreement carefully before signing.</p>
+
+      <p><strong>Submitting a form is an inquiry, not an application.</strong> Completing the form on
+        this website, or calling us, does not constitute an application for credit, does not obligate
+        you or any lender, and does not guarantee that any offer will be made. If you choose to
+        proceed with a particular lender, that lender will conduct its own application and review
+        process, will request the information and documentation it requires, and will provide its own
+        disclosures before any agreement is executed.</p>
+
+      <p><strong>How we are paid.</strong> fundii charges consumers no fee of any kind — no application
+        fee, no service fee, no membership fee. We receive compensation from lenders when a consumer we
+        refer originates a loan. <strong>That compensation varies by lender and may influence which
+        offers are displayed and the order in which they appear.</strong> Our network does not include
+        every lender or loan product available in the market. Compare the APR of each offer rather than
+        its placement.</p>
+
+      <p><strong>Rates, terms, and representative example.</strong> APRs on personal loans available
+        through our network range from <strong>7.99% to 35.99%</strong>. The lowest advertised rate is
+        available only to the most qualified applicants who enroll in automatic payments and select the
+        shortest available term; <strong>most borrowers do not receive the lowest rate.</strong> Loan
+        amounts range from $1,000 to $100,000, with terms from 24 to 84 months, subject to lender and
+        state limits. <em>Representative example:</em> a $15,000 loan with a 36-month term at 18.99%
+        APR would carry 36 monthly payments of $549.76, for a total of payments of $19,791.36, assuming
+        no origination fee. Origination fees, where charged, generally range from 0% to 8% of the
+        amount financed, are typically deducted from loan proceeds, and are reflected in the APR. Any
+        rate, payment, or savings figure shown on this page — including calculator output — is an
+        <strong>illustration based on stated assumptions, not an offer, a quote, or a commitment to
+        lend.</strong></p>
+
+      <p><strong>Application review.</strong> Lenders evaluate applications using their own
+        underwriting criteria, which typically include income, employment, existing obligations, and a
+        review of your consumer report obtained from one or more consumer reporting agencies. Any such
+        review is conducted by the lender under its own authorization and disclosures, not by fundii.
+        Missing payments on any loan you take out may result in late fees, collection activity, adverse
+        reporting, and legal action by the lender.</p>
+
+      <p><strong>Eligibility and availability.</strong> You must be at least 18 years of age (19 in
+        Alabama and Nebraska), a U.S. citizen or permanent resident, and have a valid bank account and
+        verifiable income. Products, rates, maximum amounts, and terms <strong>are not available in all
+        states</strong> and are subject to state licensing and usury limits. Not all applicants will be
+        approved, and approval is at the sole discretion of the lender. Loans may not be used for
+        post-secondary educational expenses, gambling, illegal activity, or the purchase of securities
+        or cryptocurrency; specific restrictions vary by lender.</p>
+
+      <p><strong>Equal Credit Opportunity Act.</strong> Lenders in our network are equal opportunity
+        lenders. The federal Equal Credit Opportunity Act prohibits creditors from discriminating
+        against credit applicants on the basis of race, color, religion, national origin, sex, marital
+        status, age (provided the applicant has the capacity to enter into a binding contract); because
+        all or part of the applicant's income derives from any public assistance program; or because
+        the applicant has in good faith exercised any right under the Consumer Credit Protection Act.
+        If your application is denied, you have the right to a written statement of the specific
+        reasons within 30 days.</p>
+
+      <p><strong>Communications consent.</strong> By submitting a form or calling us, you consent to be
+        contacted by fundii, its lending partners, and their service providers at the telephone number
+        and email address you provide, using automated technology, artificial or prerecorded voice, and
+        SMS text messages, including on a cellular number, even if that number appears on a Do Not Call
+        registry. <strong>Consent is not a condition of receiving credit or of purchasing any goods or
+        services.</strong> Message and data rates may apply; message frequency varies. Reply STOP to
+        opt out, HELP for help. Revoke consent at any time by emailing
+        <a href="mailto:privacy@fundii.us">privacy@fundii.us</a> or calling
+        <a href="tel:18884048613">(888) 404-8613</a>. See our
+        <a href="../sight-solutions-group/privacy.html">Privacy Policy</a> and
+        <a href="../sight-solutions-group/privacy.html#dnc">Do Not Call Policy</a>.</p>
+
+      <p><strong>Borrow responsibly.</strong> A personal loan is a debt obligation that must be repaid
+        regardless of your circumstances. Consolidating revolving debt into an installment loan does
+        not reduce what you owe and provides no benefit if you continue to use the accounts you paid
+        off. Longer repayment terms reduce the monthly payment but <strong>increase the total interest
+        you pay</strong>. If your obligations exceed your ability to repay, borrowing may worsen your
+        position; consider nonprofit credit counseling (nfcc.org), a
+        <a href="../sight-solutions-group/index.html">debt resolution program</a>, or consultation with
+        a licensed attorney. fundii does not provide financial, legal, tax, or investment advice.</p>
+
+      <p><strong>Statistics and testimonials.</strong> Borrower statements on this page describe
+        individual experiences, are not representative of all applicants, and are not a guarantee or
+        prediction of approval, rate, amount, or funding time. Aggregate figures reflect historical
+        network data and do not predict individual outcomes. Accreditation marks and license
+        identifiers are displayed only where current and verified.</p>
+
+      <p><strong>Relationship disclosure.</strong> fundii, LLC and
+        <a href="../sight-solutions-group/index.html">Sight Solutions Group, LLC</a> are affiliated
+        entities under common ownership. Consumers who are not approved for a loan may be referred to
+        Sight Solutions Group's debt resolution program, and fundii may receive compensation for that
+        referral. Debt resolution is a different product with materially different risks, described in
+        full in the <a href="../sight-solutions-group/disclosures.html">Sight Solutions Group program
+        disclosures</a>.</p>
+    </div>
+
+    <div class="f-bottom">
+      <div>© 2026 fundii, LLC. All rights reserved. NMLS ID #0000000. This is an advertisement.</div>
+      <nav>
+        <a href="../sight-solutions-group/privacy.html">Privacy</a>
+        <a href="../sight-solutions-group/terms.html">Terms</a>
+        <a href="#legal">Disclosures</a>
+        <a href="../sight-solutions-group/accessibility.html">Accessibility</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="m-cta-bar">
+  <a href="tel:18884048613" class="btn btn-outline" style="flex:0 0 auto">Call</a>
+  <a href="#apply" class="btn btn-primary" style="flex:1">Apply now</a>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var money = function (n) { return "$" + Math.round(n).toLocaleString("en-US"); };
+
+  /* Standard amortized payment; falls back to simple division at 0% APR. */
+  function payment(principal, apr, months) {
+    var r = apr / 100 / 12;
+    if (r === 0) return principal / months;
+    return (r * principal) / (1 - Math.pow(1 + r, -months));
+  }
+
+  /* Representative APR used for the in-card estimate. Mirrors the estimator default. */
+  var REP_APR = 15.99;
+
+  /* ============================================================
+     Multi-step application
+     ============================================================ */
+  var form = document.getElementById("app");
+  var steps = form.querySelectorAll(".step");
+  var TOTAL = 5;
+  var CIRC = 2 * Math.PI * 22;
+  var ringFg = document.getElementById("ringFg");
+  var ringLbl = document.getElementById("ringLbl");
+  var title = document.getElementById("stepTitle");
+  var meta = document.getElementById("stepMeta");
+
+  var TITLES = {
+    1: ["How much do you need?",      "Step 1 of 5 · about 2 minutes"],
+    2: ["When do you need it?",       "Step 2 of 5 · timing and term"],
+    3: ["Tell us about your income",  "Step 3 of 5 · almost there"],
+    4: ["Where should we reach you?", "Step 4 of 5 · your details"],
+    5: ["Last step",                  "Step 5 of 5 · then we'll call you"],
+    6: ["Request received",           "A specialist will be in touch"]
+  };
+
+  ringFg.setAttribute("stroke-dasharray", CIRC.toFixed(1));
+
+  function goto(n) {
+    steps.forEach(function (s) { s.classList.toggle("on", s.dataset.step === String(n)); });
+    var pct = Math.min(100, Math.round((n / TOTAL) * 100));
+    ringFg.setAttribute("stroke-dashoffset", (CIRC * (1 - pct / 100)).toFixed(1));
+    ringLbl.textContent = pct + "%";
+    title.textContent = TITLES[n][0];
+    meta.textContent = TITLES[n][1];
+    if (window.innerWidth < 880) {
+      document.getElementById("apply").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
+  form.addEventListener("click", function (e) {
+    var next = e.target.closest("[data-next]"), back = e.target.closest("[data-back]");
+    if (next) goto(+next.dataset.next);
+    if (back) goto(+back.dataset.back);
+    var ch = e.target.closest(".choice");
+    if (ch) {
+      ch.parentElement.querySelectorAll(".choice").forEach(function (c) { c.classList.remove("sel"); });
+      ch.classList.add("sel");
+    }
+  });
+  form.addEventListener("keydown", function (e) {
+    if ((e.key === "Enter" || e.key === " ") && e.target.classList.contains("choice")) {
+      e.preventDefault(); e.target.click();
+    }
+  });
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!document.getElementById("ok").checked) {
+      window.alert("Please review and accept the consent language to continue.");
+      return;
+    }
+    goto(6);
+  });
+
+  /* in-card live estimate */
+  var appAmt = document.getElementById("amt"), appTerm = document.getElementById("term");
+  function syncMini() {
+    var amt = +appAmt.value, months = +appTerm.value;
+    document.getElementById("miniAmt").textContent = money(amt);
+    document.getElementById("miniPmt").innerHTML =
+      money(payment(amt, REP_APR, months)) + "<small>/mo</small>";
+  }
+  appAmt.addEventListener("input", function () {
+    document.getElementById("amtOut").textContent = money(appAmt.value);
+    syncMini();
+  });
+  appTerm.addEventListener("change", syncMini);
+  syncMini();
+
+  /* ============================================================
+     Payment estimator
+     ============================================================ */
+  var eAmt = document.getElementById("eAmt"),
+      eTerm = document.getElementById("eTerm"),
+      eApr = document.getElementById("eApr");
+
+  function estimate() {
+    var amt = +eAmt.value, months = +eTerm.value, apr = +eApr.value;
+    var pmt = payment(amt, apr, months), total = pmt * months;
+
+    document.getElementById("eAmtOut").textContent = money(amt);
+    document.getElementById("oPmt").innerHTML = money(pmt) + "<span> / month</span>";
+    document.getElementById("oSub").textContent =
+      money(amt) + " over " + months + " months at " + apr.toFixed(2) + "% APR";
+    document.getElementById("oAmt").textContent = money(amt);
+    document.getElementById("oTerm").textContent = months + " months";
+    document.getElementById("oApr").textContent = apr.toFixed(2) + "%";
+    document.getElementById("oTotal").textContent = money(total);
+    document.getElementById("oInt").textContent = money(total - amt);
+    document.getElementById("oOrig").textContent = "$0 – " + money(amt * 0.08);
+  }
+  [eAmt, eTerm, eApr].forEach(function (el) { el.addEventListener("input", estimate); });
+  estimate();
+
+  /* ============================================================
+     Mobile menu
+     ============================================================ */
+  var burger = document.querySelector(".burger"), menu = document.getElementById("mmenu");
+  function setMenu(open) {
+    menu.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
+  burger.addEventListener("click", function () {
+    setMenu(burger.getAttribute("aria-expanded") !== "true");
+  });
+  menu.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+  window.addEventListener("resize", function () { if (window.innerWidth > 880) setMenu(false); });
+
+  /* ============================================================
+     Reveal + counters
+     ============================================================ */
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!reduced && "IntersectionObserver" in window) {
+    var targets = document.querySelectorAll(".sec-head, .card, .purpose, .quote, .p-step, .stat, .table-scroll, .callout, .offer, .panel");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+
+    requestAnimationFrame(function () {
+      var armed = [];
+      Array.prototype.forEach.call(targets, function (el, i) {
+        if (el.getBoundingClientRect().top < window.innerHeight) return;
+        el.setAttribute("data-reveal", "");
+        el.style.transitionDelay = (i % 4) * 55 + "ms";
+        io.observe(el);
+        armed.push(el);
+      });
+      /* Failsafe — copy must never be left permanently invisible. */
+      setTimeout(function () {
+        armed.forEach(function (el) { el.classList.add("in"); });
+        io.disconnect();
+      }, 2500);
+    });
+  }
+
+  var counters = document.querySelectorAll("[data-count]");
+  if (!reduced && "IntersectionObserver" in window && counters.length) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target, to = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0);
+        var pre = el.dataset.prefix || "", suf = el.dataset.suffix || "", t0 = null;
+        function frame(ts) {
+          if (t0 === null) t0 = ts;
+          var p = Math.min(1, (ts - t0) / 1100);
+          el.textContent = pre + (to * (1 - Math.pow(1 - p, 3))).toFixed(dec) + suf;
+          if (p < 1) requestAnimationFrame(frame);
+          else el.textContent = pre + to.toFixed(dec) + suf;
+        }
+        requestAnimationFrame(frame);
+        cio.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    Array.prototype.forEach.call(counters, function (el) { cio.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
