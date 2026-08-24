@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Results, Fees &amp; Methodology | Sight Solutions Group</title>
+<meta name="description" content="How our fees work, what our published results actually measure, the assumptions behind our estimates, and the limitations you should apply to every number on this site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/ssg.css">
+</head>
+<body>
+<div id="ssg-header"></div>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Results &amp; fees</div>
+    <h1>Results, fees, and the math behind them</h1>
+    <p>Every number a debt relief company publishes hides a definition. Here are ours, written out, so
+       you can judge them.</p>
+  </div>
+</section>
+
+<!-- ==================== FEES ==================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Fees</p>
+      <div class="rule"></div>
+      <h2>What we charge, and the exact moment we can charge it</h2>
+      <p>The Federal Trade Commission's Telemarketing Sales Rule bans advance fees for debt relief
+         services sold by telephone. Our agreements are written to that rule.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="data">
+        <thead><tr><th style="width:26%">Charge</th><th style="width:32%">Trigger</th><th>Amount &amp; notes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Consultation</strong></td><td>None — never charged</td>
+              <td>$0. No obligation, no credit pull required for an estimate.</td></tr>
+          <tr><td><strong>Enrollment / retainer</strong></td><td>None — never charged</td>
+              <td>$0. We do not collect an advance, setup, or retainer fee of any kind.</td></tr>
+          <tr><td><strong>Program fee</strong></td>
+              <td>All three must occur first: (1) the debt is renegotiated, settled, reduced, or
+                  otherwise altered; (2) you agree to the settlement in writing; (3) at least one
+                  payment is made toward it</td>
+              <td><strong>15%–25% of the enrolled balance of that specific account</strong>, prorated
+                  and collected across your remaining deposits. The exact percentage is fixed in your
+                  written agreement before enrollment and is capped where your state imposes a limit.</td></tr>
+          <tr><td><strong>Dedicated account fee</strong></td><td>Monthly, while the account is open</td>
+              <td>Typically <strong>$9.95–$10.95 per month</strong>, charged by the independent
+                  third-party bank. This is not paid to Sight Solutions Group.</td></tr>
+          <tr><td><strong>Account setup fee</strong></td><td>One time, at account opening</td>
+              <td>Typically <strong>$0–$10</strong>, charged by the bank, disclosed in your agreement.</td></tr>
+          <tr><td><strong>Cancellation fee</strong></td><td>None — never charged</td>
+              <td>$0. Cancel any time and withdraw your remaining balance. Fees already earned on
+                  settlements you approved are not refunded.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <h4>What the fee is calculated on</h4>
+      <p>Our fee is a percentage of the <strong>balance at the time an account is enrolled</strong>,
+         not a percentage of what we save you. Both models are legal and both are used in this
+         industry. Enrolled-balance pricing means your fee is fixed and predictable from day one; it
+         also means the fee does not shrink if a settlement comes in higher than expected. We think
+         that predictability is worth it — but you should know which model you're buying, and you
+         should ask any competitor the same question.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CALCULATOR ==================== -->
+<section class="sec-soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Illustration</p>
+      <div class="rule"></div>
+      <h2>What a program might look like</h2>
+      <p>An illustration built on the stated assumptions below. It is not an offer, a quote, or a
+         prediction of your outcome.</p>
+    </div>
+
+    <div class="grid-2" style="gap:48px;align-items:start">
+      <div class="card" >
+        <div class="field">
+          <label for="amt">Enrolled unsecured debt</label>
+          <div style="font-size:40px;font-weight:600;color:var(--navy-800);line-height:1;margin:6px 0 12px" id="amtOut">$25,000</div>
+          <input type="range" id="amt" min="7500" max="150000" step="500" value="25000"
+                 style="width:100%;accent-color:var(--teal)">
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--faint)">
+            <span>$7,500</span><span>$75,000</span><span>$150,000</span>
+          </div>
+        </div>
+        <div class="field" style="margin-top:20px">
+          <label for="term">Program length</label>
+          <select id="term">
+            <option value="24">24 months</option>
+            <option value="36" selected>36 months</option>
+            <option value="48">48 months</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fee">Program fee tier</label>
+          <select id="fee">
+            <option value="0.18">18% of enrolled debt</option>
+            <option value="0.22" selected>22% of enrolled debt</option>
+            <option value="0.25">25% of enrolled debt</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <div class="table-scroll">
+          <table class="data" style="min-width:0">
+            <tbody>
+              <tr><td><strong>Enrolled debt</strong></td><td style="text-align:right" id="rDebt">$25,000</td></tr>
+              <tr><td>Estimated settlements at 51% of balance</td><td style="text-align:right" id="rSettle">$12,750</td></tr>
+              <tr><td>Program fee</td><td style="text-align:right" id="rFee">$5,500</td></tr>
+              <tr><td>Dedicated account fees</td><td style="text-align:right" id="rBank">$394</td></tr>
+              <tr><td><strong>Estimated total program cost</strong></td><td style="text-align:right"><strong id="rTotal">$18,644</strong></td></tr>
+              <tr style="background:var(--teal-100)"><td><strong>Estimated monthly deposit</strong></td>
+                  <td style="text-align:right"><strong id="rMonthly">$518</strong></td></tr>
+              <tr style="background:var(--teal-100)"><td><strong>Estimated savings vs. enrolled balance</strong></td>
+                  <td style="text-align:right"><strong id="rSave">$6,356</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout warn">
+          <h4>Assumptions in this illustration</h4>
+          <p>Settlements average 51% of the enrolled balance; every enrolled account settles; no
+             additional interest, late fees, or penalties accrue after enrollment; deposits are made on
+             time every month; the dedicated account fee is $10.95/month; and the program runs the full
+             selected term. <strong>Real programs violate several of these assumptions regularly.</strong>
+             Balances typically grow after enrollment, some accounts never settle, and clients miss
+             deposits. Treat this as a ceiling on the good case, not an expectation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== METHODOLOGY ==================== -->
+<section>
+  <div class="wrap" style="max-width:840px">
+    <div class="sec-head">
+      <p class="eyebrow">Methodology</p>
+      <div class="rule"></div>
+      <h2>What our published statistics actually mean</h2>
+    </div>
+
+    <!-- PLACEHOLDER METHODOLOGY — replace figures, dates, and population with audited data -->
+    <div class="doc">
+      <h3>“$1.4 billion in enrolled debt resolved”</h3>
+      <p>The sum of the <em>enrolled balances</em> of all accounts that reached a completed settlement
+         between January 1, 2016 and December 31, 2025 for clients of Sight Solutions Group. It counts
+         balances at the time of enrollment, not amounts paid or amounts forgiven. It does not measure
+         client savings, and it does not net out fees.</p>
+
+      <h3>“Average settlement of 51%”</h3>
+      <p>The arithmetic mean of (settlement amount ÷ enrolled balance) across all accounts settled
+         between January 1, 2023 and December 31, 2025, for clients who remained in a program for at
+         least twelve months. It is calculated <strong>before program fees</strong>. Including fees at
+         a 22% tier, the comparable figure would be approximately 73% of the enrolled balance.
+         Accounts that never settled are excluded from this average, which biases it favorably —
+         a limitation we are stating rather than hiding.</p>
+
+      <h3>“Median completed program length: 28 months”</h3>
+      <p>The median number of months between enrollment and final settlement, <strong>counting only
+         clients who completed their program</strong>. Clients who withdrew early are excluded.
+         Completion rates in this industry are materially below 100%, so this figure describes
+         successful clients, not all clients.</p>
+
+      <h3>“30 states”</h3>
+      <p>States in which Sight Solutions Group currently accepts new enrollments, holds any license or
+         registration required by that state, and maintains any required surety bond. Availability
+         changes; see <a href="state-disclosures.html">state disclosures</a> for the current list.</p>
+
+      <h3>Limitations that apply to all of the above</h3>
+      <ul>
+        <li>Past performance does not predict individual results.</li>
+        <li>Averages conceal wide variation. Individual settlements have ranged from roughly 20% to
+            100% of the enrolled balance, and some accounts do not settle at all.</li>
+        <li>Figures are compiled from our internal systems and, unless expressly stated, have not been
+            audited or verified by an independent third party.</li>
+        <li>Enrolled balances grow after enrollment when interest and fees continue to accrue.
+            Percentages calculated against enrolled balances therefore understate what is actually
+            owed at settlement.</li>
+        <li>Clients who do not complete a program may end in a worse position than when they enrolled.</li>
+      </ul>
+
+      <div class="callout danger">
+        <h4>The number that matters most</h4>
+        <p>Ask any debt relief company — including us — what percentage of enrolled clients complete
+           their program, and how that figure is defined. If a company won't answer plainly, that
+           tells you something. Our completion figures and their definitions are stated in your
+           written program agreement and are available on request from
+           <a href="mailto:compliance@sightsolutionsgroup.com">compliance@sightsolutionsgroup.com</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <div>
+      <h2>Want these numbers run on your actual debt?</h2>
+      <p>A specialist will build the estimate from your real balances — free, and in writing.</p>
+    </div>
+    <div class="acts">
+      <a href="get-started.html" class="btn btn-primary btn-lg">Request a consultation</a>
+      <a href="disclosures.html" class="btn btn-outline-light btn-lg">Full disclosures</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<div id="ssg-footer"></div>
+<script src="assets/ssg.js"></script>
+<script>
+SSG.mount("results");
+(function () {
+  "use strict";
+  var SETTLE = 0.51, BANK = 10.95;
+  var amt = document.getElementById("amt"),
+      term = document.getElementById("term"),
+      fee = document.getElementById("fee");
+
+  function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+  function run() {
+    var d = +amt.value, m = +term.value, f = +fee.value;
+    var settle = d * SETTLE, feeAmt = d * f, bank = BANK * m;
+    var total = settle + feeAmt + bank;
+
+    document.getElementById("amtOut").textContent  = money(d);
+    document.getElementById("rDebt").textContent   = money(d);
+    document.getElementById("rSettle").textContent = money(settle);
+    document.getElementById("rFee").textContent    = money(feeAmt);
+    document.getElementById("rBank").textContent   = money(bank);
+    document.getElementById("rTotal").textContent  = money(total);
+    document.getElementById("rMonthly").textContent= money(total / m);
+    document.getElementById("rSave").textContent   = money(d - total);
+  }
+  [amt, term, fee].forEach(function (el) { el.addEventListener("input", run); });
+  run();
+})();
+</script>
+</body>
+</html>
